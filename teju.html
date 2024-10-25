@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Teju!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, black, pink);
+            text-align: center;
+            padding: 40px;
+            color: #fff;
+            animation: fadeIn 1s ease-in;
+            overflow: hidden;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            margin: 20px 0;
+            font-size: 1.2em;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+        .button:hover {
+            background-color: #ff8564;
+        }
+        
+        /* Bubble Animation */
+        .bubble {
+            position: fixed;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: rise 2s ease-out infinite;
+            opacity: 0;
+        }
+        
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday, Teju 🎉</h1>
+    <p class="content"><br>"On this special day, may your dreams take flight. Wishing you a day filled with love, joy, and all your favorite things!"</br></p>
+        
+    <div class="content">
+        <h2>Enjoy this special video!</h2>
+        <video controls>
+            <source src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\Snapchat-1243260108.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <a href="javascript:void(0);" class="button" onclick="createBubbleEffect()">Baby if u want see some more than click here 😎</a>
+    <p>Here's to many more adventures together! 🌟</p>
+
+    <!-- Bubble Container -->
+    <div id="bubble-container"></div>
+
+    <script>
+        function createBubbleEffect() {
+            const bubbleContainer = document.getElementById('bubble-container');
+
+            // Create larger and more bubbles
+            for (let i = 0; i < 100; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                bubble.style.width = `${Math.random() * 100 + 50}px`; // Larger size
+                bubble.style.height = bubble.style.width;
+                bubble.style.left = `${Math.random() * 100}vw`;
+                bubble.style.animationDuration = `${Math.random() * 1.5 + 1.5}s`; // Faster rise
+                bubbleContainer.appendChild(bubble);
+            }
+
+            // Redirect after 1.5 seconds to allow animation to cover screen
+            setTimeout(() => {
+                window.location.href = 'teju2.html';
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

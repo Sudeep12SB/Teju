@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            text-align: center;
+            padding: 40px;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            color: #ff6347;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #ff8564;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>🌟 Mine pic 🌟</h1>
+    <div class="photo-gallery">
+        <!-- Add your image paths here -->
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20221121-WA0011.jpg" alt="Photo 1">
+        <img src= "C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20221121-WA0020.jpg" alt="Photo 2">
+        <img src= "C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230223-WA0015.jpg" alt="Photo 3">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230311-WA0009.jpg" alt="Photo 4">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230311-WA0023.jpg" alt="Photo 5">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230312-WA0009.jpg" alt="Photo 6">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230312-WA0016.jpg" alt="Photo 7">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230312-WA0026.jpg"  alt="Photo 8">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230312-WA0032.jpg" alt="Photo 9">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230507-WA0033.jpg" alt="Photo 10">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\Snapchat-96961535.jpg"alt="Photo 11">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\Snapchat-576984778.jpg" alt="Photo 12">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\Snapchat-1452679901.jpg" alt="Photo 14">
+        <img src="C:\Users\Sudeep S.Bingolli\Downloads\Desktop\teju\IMG-20230507-WA0034.jpg" alt="Photo 15">
+        
+    </div>
+
+    <a href="teju3.html" class="back-button"> Read a note </a>
+</body>
+</html>
